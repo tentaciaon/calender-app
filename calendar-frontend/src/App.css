@@ -1,0 +1,105 @@
+/* Base Styles */
+.event-manager-calendar-container {
+  display: flex;
+}
+
+.event-manager, .calendar {
+  flex: 1;
+  margin: 10px; /* Add spacing between components */
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 columns for days */
+  grid-gap: 10px;
+  background-color: #0f7993;
+}
+
+.calendar-day {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #0f7993;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.calendar-day:hover {
+  background-color: #a71717;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* For tablets and smaller screens */
+  .event-manager-calendar-container {
+    flex-direction: column; /* Stack components on smaller screens */
+  }
+}
+/* App.css */
+
+/* Container for the filters */
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Style for the search input */
+.filters input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 200px;
+}
+
+/* Style for the date input */
+.filters input[type="date"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 180px;
+}
+
+/* Style for the select input */
+.filters select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 150px;
+}
+
+/* Events List Styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+li strong {
+  color: #007bff;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+  }
+
+  .filters input[type="text"],
+  .filters input[type="date"],
+  .filters select {
+    width: 100%;
+  }
+}

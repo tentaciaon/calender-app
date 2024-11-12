@@ -41,7 +41,7 @@ Ensure you have the following installed:
 
 ### Installation
 1. Clone the repository:
-   ```bash
+   ```bash https://github.com/tentaciaon/calender-app.git
 
   # Navigate to the frontend directory and install dependencies
 cd frontend

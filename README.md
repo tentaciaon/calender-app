@@ -53,8 +53,12 @@ npm install
 
 Tech Stack
 Frontend: React, GSAP, CSS
-Backend: Node.js, Express.js, MongoDB (with in-memory DB support for development)
+
+Backend: Node.js, Express.js
+Database: MongoDB (with in-memory DB support for development)
 Notifications: Browser Notification API
+
+
 
 <img width="960" alt="Screenshot 2024-11-12 113209" src="https://github.com/user-attachments/assets/57f9b624-5f53-47fc-97f0-3526a343300b">
 
